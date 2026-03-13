@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#0c1220"/>
+  <rect width="800" height="450" fill="url(#bg-grad)" opacity="0.8"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="112" x2="800" y2="112" stroke="#1e293b" stroke-width="1"/>
+  <line x1="0" y1="224" x2="800" y2="224" stroke="#1e293b" stroke-width="1"/>
+  <line x1="0" y1="336" x2="800" y2="336" stroke="#1e293b" stroke-width="1"/>
+  <line x1="200" y1="0" x2="200" y2="450" stroke="#1e293b" stroke-width="1"/>
+  <line x1="400" y1="0" x2="400" y2="450" stroke="#1e293b" stroke-width="1"/>
+  <line x1="600" y1="0" x2="600" y2="450" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Inventory table -->
+  <rect x="420" y="160" width="320" height="220" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1.5" opacity="0.95"/>
+  <!-- Table header -->
+  <rect x="420" y="160" width="320" height="32" rx="8" fill="#1e3a5f"/>
+  <rect x="420" y="180" width="320" height="12" fill="#1e3a5f"/>
+  <text x="434" y="181" fill="#93c5fd" font-size="11" font-family="Arial" font-weight="bold">SKU</text>
+  <text x="504" y="181" fill="#93c5fd" font-size="11" font-family="Arial" font-weight="bold">ITEM</text>
+  <text x="634" y="181" fill="#93c5fd" font-size="11" font-family="Arial" font-weight="bold">QTY</text>
+  <text x="694" y="181" fill="#93c5fd" font-size="11" font-family="Arial" font-weight="bold">STATUS</text>
+  <!-- Row 1 -->
+  <text x="434" y="212" fill="#94a3b8" font-size="10" font-family="Arial">CC-4821</text>
+  <text x="504" y="212" fill="#e2e8f0" font-size="10" font-family="Arial">Tower Unit</text>
+  <text x="646" y="212" fill="#e2e8f0" font-size="10" font-family="Arial">142</text>
+  <rect x="692" y="200" width="38" height="16" rx="8" fill="#14532d"/>
+  <text x="711" y="212" text-anchor="middle" fill="#86efac" font-size="9" font-family="Arial">OK</text>
+  <!-- Row 2 -->
+  <text x="434" y="236" fill="#94a3b8" font-size="10" font-family="Arial">CC-2290</text>
+  <text x="504" y="236" fill="#e2e8f0" font-size="10" font-family="Arial">Shelf Panel</text>
+  <text x="646" y="236" fill="#e2e8f0" font-size="10" font-family="Arial">8</text>
+  <rect x="688" y="224" width="46" height="16" rx="8" fill="#7c2d12"/>
+  <text x="711" y="236" text-anchor="middle" fill="#fca5a5" font-size="9" font-family="Arial">LOW</text>
+  <!-- Row 3 -->
+  <text x="434" y="260" fill="#94a3b8" font-size="10" font-family="Arial">CC-3301</text>
+  <text x="504" y="260" fill="#e2e8f0" font-size="10" font-family="Arial">Door Hinge</text>
+  <text x="646" y="260" fill="#e2e8f0" font-size="10" font-family="Arial">560</text>
+  <rect x="692" y="248" width="38" height="16" rx="8" fill="#14532d"/>
+  <text x="711" y="260" text-anchor="middle" fill="#86efac" font-size="9" font-family="Arial">OK</text>
+  <!-- Row 4 -->
+  <text x="434" y="284" fill="#94a3b8" font-size="10" font-family="Arial">CC-1175</text>
+  <text x="504" y="284" fill="#e2e8f0" font-size="10" font-family="Arial">Rail Track</text>
+  <text x="646" y="284" fill="#e2e8f0" font-size="10" font-family="Arial">23</text>
+  <rect x="684" y="272" width="54" height="16" rx="8" fill="#78350f"/>
+  <text x="711" y="284" text-anchor="middle" fill="#fde68a" font-size="9" font-family="Arial">ORDER</text>
+  <!-- Row 5 -->
+  <text x="434" y="308" fill="#94a3b8" font-size="10" font-family="Arial">CC-8840</text>
+  <text x="504" y="308" fill="#e2e8f0" font-size="10" font-family="Arial">Drawer Box</text>
+  <text x="646" y="308" fill="#e2e8f0" font-size="10" font-family="Arial">87</text>
+  <rect x="692" y="296" width="38" height="16" rx="8" fill="#14532d"/>
+  <text x="711" y="308" text-anchor="middle" fill="#86efac" font-size="9" font-family="Arial">OK</text>
+
+  <!-- QB Sync badge -->
+  <rect x="434" y="342" width="160" height="28" rx="14" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="514" y="360" text-anchor="middle" fill="#93c5fd" font-size="11" font-family="Arial" font-weight="bold">⚡ QuickBooks Sync</text>
+  <rect x="604" y="342" width="120" height="28" rx="14" fill="#1e1a2e" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="664" y="360" text-anchor="middle" fill="#c4b5fd" font-size="11" font-family="Arial" font-weight="bold">C# · .NET</text>
+
+  <!-- Title -->
+  <rect x="50" y="33" width="3" height="32" rx="1.5" fill="#3b82f6"/>
+  <text x="64" y="52" fill="#3b82f6" font-size="13" font-family="Arial" font-weight="bold" letter-spacing="3">SUPPLY PILOT</text>
+  <text x="64" y="82" fill="white" font-size="26" font-family="Arial" font-weight="bold">Inventory &amp; Purchasing SaaS</text>
+  <text x="64" y="108" fill="#94a3b8" font-size="14" font-family="Arial">Internal tool — California Closets · Full Stack Dev &amp; Business Analyst</text>
+
+  <!-- Role pills -->
+  <rect x="64" y="124" width="120" height="26" rx="13" fill="#1e3a5f"/>
+  <text x="124" y="141" text-anchor="middle" fill="#93c5fd" font-size="11" font-family="Arial" font-weight="bold">Full Stack Dev</text>
+  <rect x="194" y="124" width="130" height="26" rx="13" fill="#1e3a5f"/>
+  <text x="259" y="141" text-anchor="middle" fill="#93c5fd" font-size="11" font-family="Arial" font-weight="bold">Business Analyst</text>
+  <rect x="334" y="124" width="110" height="26" rx="13" fill="#172554"/>
+  <text x="389" y="141" text-anchor="middle" fill="#93c5fd" font-size="11" font-family="Arial" font-weight="bold">Proprietary</text>
+
+  <!-- Stats -->
+  <rect x="64" y="175" width="310" height="90" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="84" y="200" fill="#94a3b8" font-size="12" font-family="Arial">Inventory Management</text>
+  <text x="84" y="220" fill="#94a3b8" font-size="12" font-family="Arial">Purchase Order Workflows</text>
+  <text x="84" y="240" fill="#94a3b8" font-size="12" font-family="Arial">QuickBooks Financial Sync (C#)</text>
+  <line x1="64" y1="275" x2="374" y2="275" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Tech stack -->
+  <rect x="64" y="390" width="75" height="24" rx="12" fill="#172554"/>
+  <text x="101" y="406" text-anchor="middle" fill="#93c5fd" font-size="11" font-family="Arial">Next.js</text>
+  <rect x="149" y="390" width="65" height="24" rx="12" fill="#172554"/>
+  <text x="181" y="406" text-anchor="middle" fill="#93c5fd" font-size="11" font-family="Arial">Python</text>
+  <rect x="224" y="390" width="50" height="24" rx="12" fill="#172554"/>
+  <text x="249" y="406" text-anchor="middle" fill="#93c5fd" font-size="11" font-family="Arial">SQL</text>
+  <rect x="284" y="390" width="40" height="24" rx="12" fill="#1e1a2e"/>
+  <text x="304" y="406" text-anchor="middle" fill="#c4b5fd" font-size="11" font-family="Arial">C#</text>
+  <rect x="334" y="390" width="75" height="24" rx="12" fill="#172554"/>
+  <text x="371" y="406" text-anchor="middle" fill="#93c5fd" font-size="11" font-family="Arial">QB API</text>
+
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0f2847"/>
+      <stop offset="100%" stop-color="#0c1220"/>
+    </linearGradient>
+  </defs>
+</svg>
