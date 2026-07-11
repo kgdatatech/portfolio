@@ -1,0 +1,414 @@
+/*
+	Dark theme overlay — loaded after main.css, overrides HTML5 UP "Massively" defaults.
+	Palette matches Archon Systems branding (buildarchon.com).
+	Remove this stylesheet's <link> to revert to the stock light template.
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap");
+
+:root {
+	--bg: #0a0b14;
+	--surface: #101321;
+	--surface-2: #171a2b;
+	--border: rgba(255, 255, 255, 0.08);
+	--border-strong: rgba(255, 255, 255, 0.16);
+	--text: #e9eaf2;
+	--text-dim: #a0a3bd;
+	--accent: #7a7cf0;
+	--accent-strong: #4547d4;
+	--accent-soft: rgba(122, 124, 240, 0.35);
+}
+
+/* Base */
+
+	html {
+		background: var(--bg);
+	}
+
+	body, input, select, textarea {
+		font-family: "Inter", "Segoe UI", Helvetica, Arial, sans-serif;
+		color: var(--text-dim);
+	}
+
+	body {
+		background: var(--bg);
+	}
+
+	::selection {
+		background: var(--accent-strong);
+		color: #ffffff;
+	}
+
+	a {
+		color: var(--accent);
+		border-bottom-color: var(--accent-soft);
+	}
+
+		a:hover {
+			color: var(--accent);
+			border-bottom-color: transparent;
+		}
+
+	strong, b {
+		color: var(--text);
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: "Inter", "Segoe UI", Helvetica, Arial, sans-serif;
+		font-weight: 800;
+		color: var(--text);
+	}
+
+	code {
+		background: var(--surface-2);
+		border-color: var(--border);
+	}
+
+	pre code {
+		background: var(--surface-2);
+		border-color: var(--border);
+	}
+
+	hr {
+		border-bottom-color: var(--border);
+	}
+
+/* Background (parallax .bg div is injected by main.js) */
+
+	#wrapper > .bg,
+	#wrapper > .bg.fixed {
+		background-color: var(--bg);
+		background-image:
+			radial-gradient(ellipse 80% 50% at 50% -10%, rgba(69, 71, 212, 0.28), transparent 65%),
+			radial-gradient(ellipse 60% 40% at 85% 100%, rgba(69, 71, 212, 0.10), transparent 60%);
+		background-size: auto;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+/* Intro (index hero) */
+
+	#intro {
+		color: var(--text-dim);
+	}
+
+		#intro h1 {
+			color: #ffffff;
+		}
+
+		#intro h3 {
+			letter-spacing: 0.1em;
+		}
+
+		#intro p {
+			color: var(--text-dim);
+		}
+
+/* Header logo */
+
+	#header .logo {
+		color: #ffffff;
+		border-color: var(--border-strong);
+	}
+
+		#header .logo:hover {
+			color: var(--accent);
+			border-color: var(--accent);
+		}
+
+/* Nav */
+
+	#nav {
+		background-color: rgba(16, 19, 33, 0.92);
+		-webkit-backdrop-filter: blur(10px);
+		backdrop-filter: blur(10px);
+		border-top: solid 1px var(--border);
+		border-bottom: solid 1px var(--border);
+		box-shadow: none;
+	}
+
+		#nav ul.links li a {
+			color: var(--text-dim);
+		}
+
+			#nav ul.links li a:hover {
+				color: var(--text);
+			}
+
+		#nav ul.links li.active {
+			background-color: transparent;
+			box-shadow: inset 0 -3px 0 0 var(--accent-strong);
+		}
+
+			#nav ul.links li.active a {
+				color: #ffffff;
+			}
+
+		#nav .icons a {
+			color: var(--text-dim);
+		}
+
+			#nav .icons a:hover {
+				color: var(--accent);
+			}
+
+	/* sticky clone of nav (Massively duplicates #nav as .alt) */
+	#nav.alt {
+		background-color: rgba(16, 19, 33, 0.92);
+	}
+
+/* Main content sheet */
+
+	#main {
+		background-color: var(--surface);
+		border-top: solid 1px var(--border);
+		box-shadow: 0 24px 64px rgba(0, 0, 0, 0.5);
+	}
+
+	#main > .post {
+		color: var(--text-dim);
+	}
+
+/* Major headers + date rule lines */
+
+	header.major > .date {
+		color: var(--text-dim);
+	}
+
+	header.major .date:before, header.major .date:after {
+		border-top-color: var(--border);
+	}
+
+	.posts article > header > .date,
+	article > header > .date,
+	span.date {
+		color: var(--accent);
+	}
+
+/* Posts grid — recolor the lattice borders */
+
+	.posts article {
+		border-color: var(--border);
+	}
+
+	.posts > * {
+		border-color: var(--border) !important;
+	}
+
+/* Images */
+
+	.image img {
+		border-radius: 8px;
+		border: solid 1px var(--border);
+	}
+
+	a.image {
+		border-bottom: none;
+	}
+
+/* Buttons */
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	button,
+	.button {
+		box-shadow: inset 0 0 0 2px var(--border-strong);
+		color: var(--text) !important;
+		border-radius: 6px;
+	}
+
+		input[type="submit"]:hover,
+		input[type="reset"]:hover,
+		input[type="button"]:hover,
+		button:hover,
+		.button:hover {
+			box-shadow: inset 0 0 0 2px var(--accent);
+			color: var(--accent) !important;
+			background: none;
+		}
+
+	/* primary / large CTAs — solid indigo */
+	input[type="submit"],
+	.button.large,
+	.button.primary {
+		background-color: var(--accent-strong);
+		box-shadow: none;
+		color: #ffffff !important;
+	}
+
+		input[type="submit"]:hover,
+		.button.large:hover,
+		.button.primary:hover {
+			background-color: #5658e0;
+			box-shadow: none;
+			color: #ffffff !important;
+		}
+
+	.button.disabled,
+	.button:disabled,
+	span.button.disabled {
+		background-color: var(--surface-2) !important;
+		box-shadow: inset 0 0 0 2px var(--border) !important;
+		color: var(--text-dim) !important;
+		opacity: 1;
+	}
+
+/* Forms (contact page) */
+
+	label {
+		color: var(--text);
+	}
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	select,
+	textarea {
+		background: var(--surface-2);
+		box-shadow: inset 0 0 0 1px var(--border);
+		color: var(--text);
+		border-radius: 6px;
+	}
+
+		input[type="text"]:focus,
+		input[type="password"]:focus,
+		input[type="email"]:focus,
+		select:focus,
+		textarea:focus {
+			box-shadow: inset 0 0 0 2px var(--accent);
+		}
+
+/* Footer + copyright */
+
+	#footer {
+		background-color: var(--surface);
+		border-top: solid 1px var(--border);
+		color: var(--text-dim);
+	}
+
+		#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
+			color: var(--text);
+		}
+
+		#footer a {
+			color: var(--accent);
+			border-bottom-color: var(--accent-soft);
+		}
+
+			#footer a:hover {
+				color: var(--accent) !important;
+				border-bottom-color: transparent;
+			}
+
+		#footer .split.contact > section {
+			border-color: var(--border);
+		}
+
+		#footer label {
+			color: var(--text);
+		}
+
+		#footer input[type="text"],
+		#footer input[type="password"],
+		#footer input[type="email"],
+		#footer select,
+		#footer textarea {
+			background: var(--surface-2);
+			border-color: var(--border);
+			color: var(--text);
+		}
+
+			#footer input[type="text"]:focus,
+			#footer input[type="password"]:focus,
+			#footer input[type="email"]:focus,
+			#footer select:focus,
+			#footer textarea:focus {
+				border-color: var(--accent);
+			}
+
+		#footer input[type="submit"],
+		#footer input[type="reset"],
+		#footer input[type="button"],
+		#footer button,
+		#footer .button {
+			background-color: var(--accent-strong);
+			box-shadow: none;
+			color: #ffffff !important;
+		}
+
+			#footer input[type="submit"]:hover,
+			#footer input[type="reset"]:hover,
+			#footer input[type="button"]:hover,
+			#footer button:hover,
+			#footer .button:hover {
+				background-color: #5658e0;
+				box-shadow: none;
+				color: #ffffff !important;
+			}
+
+	#footer .icons a,
+	.icons a {
+		color: var(--text-dim);
+	}
+
+		#footer .icons a:hover,
+		.icons a:hover {
+			color: var(--accent);
+		}
+
+	#copyright {
+		color: var(--text-dim);
+	}
+
+		#copyright a:hover {
+			color: var(--accent) !important;
+		}
+
+		#copyright ul {
+			border-color: var(--border);
+		}
+
+			#copyright ul li {
+				border-color: var(--border);
+			}
+
+/* Mobile slide-out nav panel */
+
+	#navPanel {
+		background: var(--surface);
+		color: var(--text);
+	}
+
+		#navPanel nav a {
+			color: var(--text-dim);
+			border-color: var(--border);
+		}
+
+			#navPanel nav a:hover {
+				color: var(--text);
+			}
+
+	#navButton .toggle:before {
+		background-color: rgba(16, 19, 33, 0.85);
+	}
+
+/* Scrollbar */
+
+	::-webkit-scrollbar {
+		width: 12px;
+	}
+
+	::-webkit-scrollbar-track {
+		background: var(--bg);
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: var(--surface-2);
+		border: 3px solid var(--bg);
+		border-radius: 6px;
+	}
+
+		::-webkit-scrollbar-thumb:hover {
+			background: var(--border-strong);
+		}
